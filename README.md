@@ -20,3 +20,7 @@ In our work, we used the following IDs for soluble carbon sources in the configu
 Glucose (cpd00027), Acetate (cpd00029), Pyruvate (cpd00020), Lactate (cpd00159), Succinate (cpd00036), Formate (cpd00047), Fructose (cpd00082), Glycerol (cpd00100), Citrate (cpd00137), Ethanol (cpd00363), Propionate (cpd00141), Malate (cpd00130), Methanol (cpd00116), Formaldehyde (cpd00055), Cellulose (cpd11746), Butyrate (cpd00211), Benzoate (cpd00153), Phenol (cpd00127), and Toluene (cpd01034).
 For the 20 proteinogenic amino acids we used: Ala (cpd00035), Val (cpd00156), Leu (cpd00107), Ile (cpd00322), Pro (cpd00129), Cys (cpd00084), Met (cpd00060), Gly (cpd00033), Trp (cpd00065), Phe (cpd00066), Lys (cpd00039), Arg (cpd00051), His (cpd00119), Tyr (cpd00069), Thr (cpd00161), Glu (cpd00023), Gln (cpd00053), Asp (cpd00041), Asn (cpd00132), and Ser (cpd00054).
 Users working with other models can replace these IDs in the configuration layer and keep the rest of the workflow unchanged.
+
+Because some Accumulibacter genomes are auxotrophic for specific amino acids and vitamins, we also included a small auxotrophy table.
+For these strains, the missing nutrients are listed in auxotrophy_summary_acc.csv and are supplied as low-level uptake reactions during the simulations.
+Users applying the framework to other organisms can set up a similar table to provide required supplements and avoid artificial growth failure due to missing essential nutrients.
